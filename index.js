@@ -1,4 +1,4 @@
-// import { calculate } from "./cart.js"
+import { calculate, default_calculate } from "./cart"
 
 let items_in_cart = 0
 
@@ -9,7 +9,7 @@ function handleClick(){
     console.log("clicked")
 }
 
-WITHOUT TERNARY
+// WITHOUT TERNARY
 document.getElementById("buy").onclick = function handleClick(){
     let cart = document.getElementById("cart");
     let hidden = cart.classList.contains("hidden")
@@ -21,7 +21,7 @@ document.getElementById("buy").onclick = function handleClick(){
     items.textContent = items_in_cart;
 }
 
-WITH TERNARY
+// WITH TERNARY
 document.getElementById("buy").onclick = function handleClick(){
     let cart = document.getElementById("cart");
     let hidden = cart.classList.contains("hidden")
